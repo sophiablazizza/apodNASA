@@ -3,7 +3,8 @@ const btn = $("#btnSubmit")
 
     let data = document.getElementById("dataInput").value
 
-   let apiNasa = $.ajax({url: `https://api.nasa.gov/planetary/apod? api_key = ZFE5YeXAQ60uoozSsMtLyp0oSdcpMDTYwWmYILwe&date=${data}`, async: false}).responseJSON;
+   let apiNasa = $.ajax({url: `https://api.nasa.gov/planetary/apod?api_key=ZFE5YeXAQ60uoozSsMtLyp0oSdcpMDTYwWmYILwe&date=${data}`, 
+   async: false}).responseJSON;
    console.log(apiNasa);
    e.preventDefault();
 
@@ -15,5 +16,4 @@ const btn = $("#btnSubmit")
        document.getElementById("texto").innerText = apiNasa.explanation;
        document.getElementById("imagemNasa").src = apiNasa.url;
    }
-   e.preventDefault();
 })
