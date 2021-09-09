@@ -19,3 +19,9 @@ h1, h2 {
     text-align: center;
     padding: 20px;
 }
+
+footer {
+    margin: 15px;
+    bottom: 0;
+    position: fixed;
+}
