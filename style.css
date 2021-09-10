@@ -27,6 +27,7 @@ form {
     justify-content: center;
 }
 
+
 #texto {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -40,7 +41,14 @@ form {
     align-items: center;
     max-width: 500px;
     max-height: 500px;
-    margin-top: 10px;
+    margin-top: 10px;   
+}
+
+#imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
 
